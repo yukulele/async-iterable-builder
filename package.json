@@ -13,11 +13,14 @@
     "test": "bun test",
     "lint": "eslint ./src/**/*.ts ./test/**/*.ts --max-warnings 0 --fix",
     "build": "bun run build.ts",
-    "prepublishOnly": "bun run build"
+    "prepublishOnly": "bun run build",
+    "release": "release-it"
   },
   "type": "module",
   "main": "./dist/AsyncIterableBuilder.js",
-  "files": ["./dist/"],
+  "files": [
+    "./dist/"
+  ],
   "peerDependencies": {
     "typescript": "^5.0.0"
   },
@@ -36,6 +39,7 @@
     "eslint-plugin-only-warn": "^1.1.0",
     "eslint-plugin-prettier": "^5.1.3",
     "eslint-plugin-promise": "^6.1.1",
-    "eslint-plugin-unicorn": "^50.0.1"
+    "eslint-plugin-unicorn": "^50.0.1",
+    "release-it": "^17.0.1"
   }
 }
