@@ -6,6 +6,7 @@ export default class AsyncIterableBuilder<Type> {
   readonly iterable: AsyncIterable<Type>
   readonly next: (value: Type) => void
   readonly done: () => void
+  readonly isDone = () => this.#isDone
 
   constructor() {
     this.#nextPromise()

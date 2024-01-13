@@ -13,4 +13,10 @@ npm install async-iterable-builder
 
 ## Use
 
+```typescript
+import AsyncIterableBuilder from './dist/AsyncIterableBuilder.js'
+
+const { next, done, isDone, iterable } = new AsyncIterableBuilder()
+```
+
 see [example.ts](./example.ts)
