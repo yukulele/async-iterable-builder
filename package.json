@@ -20,6 +20,7 @@
   "main": "./dist/AsyncIterableBuilder.js",
   "types": "./dist/AsyncIterableBuilder.d.ts",
   "files": [
+    "./src/",
     "./dist/"
   ],
   "peerDependencies": {
