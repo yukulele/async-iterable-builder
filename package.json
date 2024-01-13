@@ -18,6 +18,7 @@
   },
   "type": "module",
   "main": "./dist/AsyncIterableBuilder.js",
+  "types": "./dist/AsyncIterableBuilder.d.ts",
   "files": [
     "./dist/"
   ],
