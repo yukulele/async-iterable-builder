@@ -1,0 +1,41 @@
+{
+  "name": "async-iterable-builder",
+  "version": "1.0.2",
+  "homepage": "https://github.com/yukulele/async-iterable-builder",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yukulele/async-iterable-builder.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yukulele/async-iterable-builder/issues"
+  },
+  "scripts": {
+    "test": "bun test",
+    "lint": "eslint ./src/**/*.ts ./test/**/*.ts --max-warnings 0 --fix",
+    "build": "bun run build.ts",
+    "prepublishOnly": "bun run build"
+  },
+  "type": "module",
+  "main": "./dist/AsyncIterableBuilder.js",
+  "files": ["./dist/"],
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "devDependencies": {
+    "@happy-dom/global-registrator": "^13.0.5",
+    "@types/bun": "^1.0.1",
+    "@typescript-eslint/eslint-plugin": "^6.18.1",
+    "@typescript-eslint/parser": "^6.18.1",
+    "bun-plugin-dts": "^0.2.1",
+    "eslint": "^8.56.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-eslint-comments": "^3.2.0",
+    "eslint-plugin-filename-export": "^1.0.4",
+    "eslint-plugin-import": "^2.29.1",
+    "eslint-plugin-n": "^16.6.2",
+    "eslint-plugin-only-warn": "^1.1.0",
+    "eslint-plugin-prettier": "^5.1.3",
+    "eslint-plugin-promise": "^6.1.1",
+    "eslint-plugin-unicorn": "^50.0.1"
+  }
+}
