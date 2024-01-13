@@ -1,4 +1,4 @@
-# async-query-selector
+# AsyncIterable Builder
 
 simplified `asyncIterable` builder using `next()` and `done()` functions
 
