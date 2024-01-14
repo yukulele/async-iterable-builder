@@ -3,11 +3,7 @@
     "browser": true,
     "es2021": true
   },
-  "ignorePatterns":[
-    "*.js",
-    "/dist/",
-    "/node_modules/"
-  ],
+  "ignorePatterns": ["*.js", "/dist/", "/node_modules/"],
   "extends": [
     "eslint:recommended",
     "plugin:eslint-comments/recommended",
@@ -45,7 +41,7 @@
     "no-console": [
       "error",
       {
-        "allow": ["info", "warn", "error"]
+        "allow": ["info", "warn", "error", "time", "timeEnd"]
       }
     ],
     "filename-export/match-default-export": ["error", { "casing": "strict" }],
