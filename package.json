@@ -1,6 +1,6 @@
 {
   "name": "async-iterable-builder",
-  "version": "1.1.0",
+  "version": "2.0.0",
   "homepage": "https://github.com/yukulele/async-iterable-builder",
   "repository": {
     "type": "git",
@@ -21,7 +21,10 @@
   "type": "module",
   "main": "./dist/AsyncIterableBuilder.js",
   "types": "./dist/AsyncIterableBuilder.d.ts",
-  "files": ["./src/", "./dist/"],
+  "files": [
+    "./src/",
+    "./dist/"
+  ],
   "peerDependencies": {
     "typescript": "^5.0.0"
   },
