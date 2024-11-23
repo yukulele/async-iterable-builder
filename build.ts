@@ -1,5 +1,6 @@
-import dts from 'bun-plugin-dts'
 import { watch } from 'node:fs'
+import Bun from 'bun'
+import dts from 'bun-plugin-dts'
 async function build() {
   console.time('build')
   await Bun.build({

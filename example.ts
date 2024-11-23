@@ -1,4 +1,4 @@
-import AsyncIterableBuilder from './dist/AsyncIterableBuilder.js'
+import { AsyncIterableBuilder } from './dist/AsyncIterableBuilder.js'
 
 function interval(interval = 0, limit = Number.POSITIVE_INFINITY) {
   let count = 0

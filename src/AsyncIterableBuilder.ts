@@ -1,4 +1,4 @@
-export default class AsyncIterableBuilder<Type> {
+export class AsyncIterableBuilder<Type> {
   #isDone = false
   readonly #values: Promise<Type>[] = []
   #resolve!: (value: Type) => void
@@ -30,13 +30,13 @@ export default class AsyncIterableBuilder<Type> {
   }
 
   #next(value: Type) {
-    if (this.#isDone) throw 'already done'
+    if (this.#isDone) throw new Error('already done')
     this.#resolve(value)
     this.#nextPromise()
   }
 
   #done() {
-    if (this.#isDone) throw 'already done'
+    if (this.#isDone) throw new Error('already done')
     this.#reject()
   }
 

@@ -4,7 +4,6 @@
 
 simplified `asyncIterable` builder using `next()` and `done()` functions
 
-
 ## Install
 
 ```bash
@@ -14,7 +13,7 @@ npm install async-iterable-builder
 ## Use
 
 ```typescript
-import AsyncIterableBuilder from './dist/AsyncIterableBuilder.js'
+import { AsyncIterableBuilder } from 'async-iterable-builder'
 
 const { next, done, isDone, iterable } = new AsyncIterableBuilder()
 ```

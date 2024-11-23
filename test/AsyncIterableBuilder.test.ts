@@ -1,10 +1,10 @@
-import { test, expect } from 'bun:test'
-import sleep from './sleep.ts'
-import AsyncIterableBuilder from '../src/AsyncIterableBuilder.ts'
-let iterator
+import { expect, test } from 'bun:test'
+import { AsyncIterableBuilder } from '../src/AsyncIterableBuilder.ts'
+import { sleep } from './sleep.ts'
+
 test('createAsyncIterable', async () => {
   const { iterable, next, done, isDone } = new AsyncIterableBuilder<number>()
-  iterator = iterable[Symbol.asyncIterator]
+  const iterator = iterable[Symbol.asyncIterator]
   iterator()
   next(1)
   next(2)
